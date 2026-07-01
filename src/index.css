@@ -1,0 +1,114 @@
+/* Google Fonts must be first @import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-flora-bg: #09100B;
+  --color-flora-card: rgba(15, 27, 21, 0.65);
+  --color-flora-accent: #C5A854;
+  --color-flora-accentLight: #D5B864;
+  --color-flora-textMuted: #9BA39D;
+  --color-flora-textLight: #F3F4F3;
+
+  --radius-flora: 24px;
+  --radius-flora-reverse: 24px;
+}
+
+:root {
+  font-family: 'Outfit', 'Inter', sans-serif;
+  background-color: #09100B;
+  color: #F3F4F3;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #09100B;
+}
+::-webkit-scrollbar-thumb {
+  background: #182C20;
+  border-radius: 4px;
+  border: 2px solid #09100B;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A854;
+}
+
+/* Glassmorphism custom classes */
+.glassmorphism {
+  background: rgba(15, 27, 21, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.glassmorphism-light {
+  background: rgba(15, 27, 21, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 168, 84, 0.1);
+}
+
+/* Custom Heading Bracket [ Text ] */
+.heading-bracket {
+  position: relative;
+  display: inline-block;
+  padding: 6px 24px;
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #F3F4F3;
+  letter-spacing: 0.025em;
+}
+
+.heading-bracket::before,
+.heading-bracket::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 100%;
+  border-color: rgba(197, 168, 84, 0.8);
+  border-style: solid;
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+.heading-bracket::before {
+  left: 0;
+  border-width: 1.5px 0 1.5px 1.5px;
+  border-radius: 6px 0 0 6px;
+}
+
+.heading-bracket::after {
+  right: 0;
+  border-width: 1.5px 1.5px 1.5px 0;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Micro-animations and hover transitions */
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px -10px rgba(197, 168, 84, 0.2);
+}
+
+.blur-bg-radial {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(46, 68, 54, 0.15) 0%, rgba(9, 16, 11, 0) 70%);
+  filter: blur(80px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
