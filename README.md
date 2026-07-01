@@ -26,8 +26,7 @@ A pixel-perfect, fully responsive plant e-commerce product listing page built fr
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/floravision.git
-cd floravision
+https://github.com/maurya0607/Flora-vision.git
 ```
 
 ### 2. Install Dependencies
@@ -74,7 +73,7 @@ npm run preview
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 my-figma/
@@ -106,7 +105,7 @@ my-figma/
 
 ---
 
-## 🎨 Design System (Color Tokens)
+##  Design System (Color Tokens)
 
 Defined in `src/index.css` using Tailwind CSS v4 `@theme`:
 
@@ -121,7 +120,7 @@ Defined in `src/index.css` using Tailwind CSS v4 `@theme`:
 
 ---
 
-## 📱 Responsive Breakpoints
+##  Responsive Breakpoints
 
 | Screen | Breakpoint |
 |--------|-----------|
@@ -132,7 +131,7 @@ Defined in `src/index.css` using Tailwind CSS v4 `@theme`:
 
 ---
 
-## ✅ Sections Implemented
+##  Sections Implemented
 
 - [x] **Navbar** — Logo, nav links with dropdown, search, cart, hamburger mobile menu
 - [x] **Hero** — Main heading, description, CTA buttons, plant card, floating review badge
@@ -144,20 +143,20 @@ Defined in `src/index.css` using Tailwind CSS v4 `@theme`:
 
 ---
 
-## 🚀 Deployment on Vercel
+##  Deployment on Vercel
 
 1. Push this repository to GitHub
 2. Go to [vercel.com](https://vercel.com) → **Add New Project**
 3. Import your GitHub repository
 4. Framework Preset: **Vite**
-5. Build Command: `npm run build`
+5. Build Command: `npm run dev`
 6. Output Directory: `dist`
 7. Click **Deploy**
 
 ---
 
-## 📧 Submission Info
+##  Submission Info
 
-**Submitted by:** [Your Name]
-**Email:** [Your Email]
-**GitHub:** [Your GitHub Profile URL]
+**Submitted by:** Vishal Maurya
+**Email:** vm9328293@gmail.com
+**GitHub:**  https://github.com/maurya0607
