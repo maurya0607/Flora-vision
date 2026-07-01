@@ -6,7 +6,7 @@ A pixel-perfect, fully responsive plant e-commerce product listing page built fr
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tool | Usage |
 |------|-------|
